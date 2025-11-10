@@ -8,6 +8,8 @@ import DemoInsights from './components/DemoInsights';
 import ConsultingFooter from './components/ConsultingFooter';
 import FeaturesPage from './components/FeaturesPage';
 import HowToUsePage from './components/HowToUsePage';
+import PricingPage from './components/PricingPage';
+import DocsPage from './components/DocsPage';
 
 function Home() {
   useEffect(() => {
@@ -46,6 +48,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/how-to-use" element={<HowToUsePage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/docs" element={<DocsPage />} />
         </Routes>
       </Router>
     </div>

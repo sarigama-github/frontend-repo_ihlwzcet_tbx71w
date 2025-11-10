@@ -7,3 +7,74 @@
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.15.8:3000/
+4:17:12 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/PricingPage.jsx:6:754: ERROR: Syntax error "n"
+4:17:13 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/PricingPage.jsx:6:754: ERROR: Syntax error "n"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/PricingPage.jsx:6:754
+  
+  Syntax error "n"
+  4  |  function Tier({ name, price, period = 'mo', bullets = [], highlight = false, ctaLabel = 'Start free', ctaHref = '#', note }) {
+  5  |    return (
+  6  |      <div className={`rounded-2xl border ${highlight ? 'border-blue-500/60' : 'border-slate-800'} bg-slate-900/40 p-6 flex flex-col`}>\n      <div className="flex items-baseline justify-between">\n        <h3 className="text-xl font-semibold">{name}</h3>\n        {highlight && <span className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/30">Most Popular</span>}\n      </div>\n      <div className="mt-4">\n        <div className="text-4xl font-bold">{price}<span className="text-lg font-medium text-slate-400">/{period}</span></div>\n        {note && <p className="mt-1 text-sm text-slate-400">{note}</p>}\n      </div>\n      <ul className="mt-6 space-y-3 text-sm text-slate-200">\n        {bullets.map((b) => (\n          <li key={b} className="flex items-start gap-3">\n            <Check className="h-5 w-5 text-green-400 shrink-0" />\n            <span>{b}</span>\n          </li>\n        ))}\n      </ul>\n      <div className="mt-6 grid grid-cols-1 gap-3">\n        <a href={ctaHref} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold ${highlight ? 'bg-white text-slate-900' : 'bg-slate-800 text-white hover:bg-slate-700'} transition-colors`}>{ctaLabel}</a>\n        <a href="https://calendly.com/datagen-ai/demo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">Book a live demo</a>\n      </div>\n    </div>\n  );
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  7  |  }
+  8  |  
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:17:14 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/PricingPage.jsx:6:754: ERROR: Syntax error "n"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/PricingPage.jsx:6:754
+  
+  Syntax error "n"
+  4  |  function Tier({ name, price, period = 'mo', bullets = [], highlight = false, ctaLabel = 'Start free', ctaHref = '#', note }) {
+  5  |    return (
+  6  |      <div className={`rounded-2xl border ${highlight ? 'border-blue-500/60' : 'border-slate-800'} bg-slate-900/40 p-6 flex flex-col`}>\n      <div className="flex items-baseline justify-between">\n        <h3 className="text-xl font-semibold">{name}</h3>\n        {highlight && <span className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/30">Most Popular</span>}\n      </div>\n      <div className="mt-4">\n        <div className="text-4xl font-bold">{price}<span className="text-lg font-medium text-slate-400">/{period}</span></div>\n        {note && <p className="mt-1 text-sm text-slate-400">{note}</p>}\n      </div>\n      <ul className="mt-6 space-y-3 text-sm text-slate-200">\n        {bullets.map((b) => (\n          <li key={b} className="flex items-start gap-3">\n            <Check className="h-5 w-5 text-green-400 shrink-0" />\n            <span>{b}</span>\n          </li>\n        ))}\n      </ul>\n      <div className="mt-6 grid grid-cols-1 gap-3">\n        <a href={ctaHref} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold ${highlight ? 'bg-white text-slate-900' : 'bg-slate-800 text-white hover:bg-slate-700'} transition-colors`}>{ctaLabel}</a>\n        <a href="https://calendly.com/datagen-ai/demo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">Book a live demo</a>\n      </div>\n    </div>\n  );
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  7  |  }
+  8  |  
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:17:33 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/PricingPage.jsx:6:754: ERROR: Syntax error "n"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/PricingPage.jsx:6:754
+  
+  Syntax error "n"
+  4  |  function Tier({ name, price, period = 'mo', bullets = [], highlight = false, ctaLabel = 'Start free', ctaHref = '#', note }) {
+  5  |    return (
+  6  |      <div className={`rounded-2xl border ${highlight ? 'border-blue-500/60' : 'border-slate-800'} bg-slate-900/40 p-6 flex flex-col`}>\n      <div className="flex items-baseline justify-between">\n        <h3 className="text-xl font-semibold">{name}</h3>\n        {highlight && <span className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/30">Most Popular</span>}\n      </div>\n      <div className="mt-4">\n        <div className="text-4xl font-bold">{price}<span className="text-lg font-medium text-slate-400">/{period}</span></div>\n        {note && <p className="mt-1 text-sm text-slate-400">{note}</p>}\n      </div>\n      <ul className="mt-6 space-y-3 text-sm text-slate-200">\n        {bullets.map((b) => (\n          <li key={b} className="flex items-start gap-3">\n            <Check className="h-5 w-5 text-green-400 shrink-0" />\n            <span>{b}</span>\n          </li>\n        ))}\n      </ul>\n      <div className="mt-6 grid grid-cols-1 gap-3">\n        <a href={ctaHref} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold ${highlight ? 'bg-white text-slate-900' : 'bg-slate-800 text-white hover:bg-slate-700'} transition-colors`}>{ctaLabel}</a>\n        <a href="https://calendly.com/datagen-ai/demo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">Book a live demo</a>\n      </div>\n    </div>\n  );
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+  7  |  }
+  8  |  
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

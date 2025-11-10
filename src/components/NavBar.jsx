@@ -30,14 +30,20 @@ function NavBar() {
             <NavLink to="/how-to-use" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
               How to Use
             </NavLink>
+            <NavLink to="/pricing" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
+              Pricing
+            </NavLink>
+            <NavLink to="/docs" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
+              Docs
+            </NavLink>
           </nav>
 
           <div className="hidden md:flex items-center gap-2">
-            <a href="#demo" className="px-4 py-2 rounded-md text-sm font-semibold bg-white text-slate-900 hover:bg-slate-200 transition-colors">
-              Try It Now
+            <a href="https://calendly.com/datagen-ai/demo" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-md text-sm font-semibold bg-white text-slate-900 hover:bg-slate-200 transition-colors">
+              Book a Demo
             </a>
-            <a href="#contact" className="px-4 py-2 rounded-md text-sm font-semibold border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">
-              Contact
+            <a href="#demo" className="px-4 py-2 rounded-md text-sm font-semibold border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">
+              Try It Now
             </a>
           </div>
 
@@ -58,8 +64,14 @@ function NavBar() {
               <NavLink onClick={() => setOpen(false)} to="/how-to-use" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
                 How to Use
               </NavLink>
+              <NavLink onClick={() => setOpen(false)} to="/pricing" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
+                Pricing
+              </NavLink>
+              <NavLink onClick={() => setOpen(false)} to="/docs" className={({ isActive }) => `${linkBase} ${isActive ? active : inactive}`}>
+                Docs
+              </NavLink>
+              <a href="https://calendly.com/datagen-ai/demo" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className={`${linkBase} ${inactive}`}>Book a Demo</a>
               <a href="#demo" onClick={() => setOpen(false)} className={`${linkBase} ${inactive}`}>Try It Now</a>
-              <a href="#contact" onClick={() => setOpen(false)} className={`${linkBase} ${inactive}`}>Contact</a>
             </nav>
           </div>
         )}
