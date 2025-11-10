@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
@@ -42,16 +42,14 @@ function Home() {
 function App() {
   return (
     <div className="min-h-screen bg-slate-950">
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/how-to-use" element={<HowToUsePage />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/docs" element={<DocsPage />} />
-        </Routes>
-      </Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<FeaturesPage />} />
+        <Route path="/how-to-use" element={<HowToUsePage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/docs" element={<DocsPage />} />
+      </Routes>
     </div>
   );
 }
